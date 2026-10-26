@@ -10,6 +10,7 @@ COMO PUBLICAR (segundo site, sem mexer no atual)
 ARQUIVOS
 - index.html ................ o aplicativo
 - pdf-lib.min.js ............ usado so no botao "PDF no layout original"
+- sw.js, manifest.webmanifest, icon-*.png, apple-touch-icon.png ... transformam o site em aplicativo instalavel que funciona SEM INTERNET
 - api/resolve.js ............ resolve links curtos do Google Maps (maps.app.goo.gl)
 - GUIA_DE_COMANDO_EM_BRANCO.pdf
 - GUIA_PRATICO_POP_BAR-001.pdf
@@ -18,3 +19,11 @@ ARQUIVOS
 
 Os nomes dos PDFs devem ficar exatamente assim, na mesma pasta do index.html.
 Os dados salvos ficam no navegador de cada aparelho; um site novo comeca vazio.
+
+INSTALAR NO CELULAR (apos publicar)
+- Android (Chrome): abra o link > menu (3 pontos) > "Instalar aplicativo" / "Adicionar a tela inicial".
+- iPhone (Safari): abra o link > Compartilhar > "Adicionar a Tela de Inicio".
+- Abra uma vez COM internet: o app baixa tudo (inclusive os PDFs) e depois funciona offline.
+
+AO PUBLICAR UMA NOVA VERSAO: mude o numero em sw.js (CACHE_VERSION = 'busca-pp-v2', v3...)
+para os aparelhos receberem a atualizacao.
